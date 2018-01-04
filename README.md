@@ -23,17 +23,26 @@ The tests are written as an MS Test Project.  To run these you can simply use th
 
 The following tests explicitly test the rules as specified in the guided rose spec provided to me :
 
+
 **agedBrieIncreasesInQualityWithAge** Ensures rule Aged Brie actually increases in Quality the older it gets.
+
 **backStagePassIncreasesInQualityWithAge** Ensures rule "Backstage passes", like aged brie, increases in Quality as its SellIn value
-approaches;
+approaches
+
 **backStagePassesDropToZeroAfterConcert** Ensures rule "Backstage passes" quality drops to 0 after the concert.
+
 **backStagePassesIncreaseBy2With10DaysOrLess** Ensures rule "Backstage passes" quality increases by 2 when there are 10 days or less.
+
 **backStagePassesIncreaseBy3With5DaysOrLess** Ensures rule "Backstage passes"  quality increases by 3 when there are 5 days or less.
+
 **conjuredItemsdegradeInQualityTwiceAsFastAsNormalItems** Ensures rule "Conjured" items degrade in Quality twice as fast as normal items.
+
 **itemWithNegativeQualityIsSetToZero** Ensures rule The Quality of an item is never negative.
+
 
 The following tests are for items that I have implemented to enable this solution to work :
 
 **ItemFactoryReturnsCorrectType** I created a factory which returns an object that implements the IStockable interface to guarantee all objects had some required functions, this rule tests that the factory is returning the correct instance of an object for the correct parameters passed in.
+
 
 
